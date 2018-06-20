@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-cloud-lab-eureka
+
+server:
+  port: 8761
+
+security:
+  basic:
+    enabled: true # 启用身份认证
+  user:
+    name: sloth # 定义用户名
+    password: linux123456 # 定义密码
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
