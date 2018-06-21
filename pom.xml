@@ -27,6 +27,7 @@
 
 	<modules>
 		<module>spring-cloud-lab-config</module>
+        <module>spring-cloud-lab-echo</module>
 		<module>spring-cloud-lab-eureka</module>
 	</modules>
 

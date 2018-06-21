@@ -1,0 +1,9 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: spring-cloud-lab-echo
+  cloud:
+    config:
+      uri: http://localhost:5001
