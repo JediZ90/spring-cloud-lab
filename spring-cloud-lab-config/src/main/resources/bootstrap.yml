@@ -9,3 +9,8 @@ spring:
       server:
         git:
           uri: https://github.com/JediZ90/spring-cloud-lab-config.git
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5002/eureka/

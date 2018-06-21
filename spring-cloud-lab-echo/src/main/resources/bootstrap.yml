@@ -6,4 +6,11 @@ spring:
     name: spring-cloud-lab-echo
   cloud:
     config:
-      uri: http://localhost:5001
+      discovery:
+        enabled: true
+        serviceId: spring-cloud-lab-config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5002/eureka/
