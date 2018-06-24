@@ -1,6 +1,10 @@
 # spring cloud简介
 Spring Cloud 构建在 Spring Boot 之上，为开发人员提供了快速构建分布式系统的一些工具，包括配置管理、服务发现、断路器、路由、微代理、事件总线、全局锁、决策竞选、分布式会话等等。
 
+# spring-cloud-lab
+Author : **[JediZ90](https://github.com/JediZ90)** | **<a href ="mailto: imbh.zhang@gmail.com">Email</a>**
+> Spring Cloud框架学习，基于版本Finchley.RELEASE
+
 ## Service Discovery - spring-cloud-lab-eureka
 A dynamic directory that enables client side load balancing and smart routing
 
