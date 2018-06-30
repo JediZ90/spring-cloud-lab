@@ -11,6 +11,8 @@ import org.springframework.cloud.context.refresh.ContextRefresher;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import lab.cloud.echo.controller.EchoController;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class EchoServerApplicationTest {
@@ -19,7 +21,7 @@ public class EchoServerApplicationTest {
     private ConfigurableEnvironment environment;
 
     @Autowired
-    private MessageRestController controller;
+    private EchoController controller;
 
     @Autowired
     private ContextRefresher refresher;
