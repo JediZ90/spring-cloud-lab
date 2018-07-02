@@ -1,0 +1,14 @@
+server:
+  port: 5002
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JediZ90/spring-cloud-lab-config.git
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://jediz90:linux@localhost:5001/eureka/

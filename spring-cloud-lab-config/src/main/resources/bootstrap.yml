@@ -1,16 +1,5 @@
-server:
-  port: 5001
-
 spring:
   application:
     name: spring-cloud-lab-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/JediZ90/spring-cloud-lab-config.git
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:5002/eureka/
+  profiles:
+    active: lab

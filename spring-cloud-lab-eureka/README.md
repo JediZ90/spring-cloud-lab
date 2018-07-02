@@ -2,4 +2,4 @@
 
 参考文档：https://spring.io/guides/gs/service-registration-and-discovery/
 
-http://localhost:5002/
+http://localhost:5001/
