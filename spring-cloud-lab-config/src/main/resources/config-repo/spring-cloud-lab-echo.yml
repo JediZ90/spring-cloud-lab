@@ -1,0 +1,15 @@
+server:
+  port: 8001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://_eureka:_linux@localhost:6001/eureka/
+
+message: hello

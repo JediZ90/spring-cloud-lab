@@ -1,14 +1,15 @@
 server:
-  port: 5002
+  port: 5001
 
 spring:
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/JediZ90/spring-cloud-lab-config.git
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://jediz90:linux@localhost:5001/eureka/
+        native:
+          search-locations: classpath:/config-repo
+  security:
+    user:
+      name: _config
+      password: _linux

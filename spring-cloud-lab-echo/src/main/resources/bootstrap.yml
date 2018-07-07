@@ -1,16 +1,9 @@
-server:
-  port: 8001
-
 spring:
   application:
     name: spring-cloud-lab-echo
   cloud:
-    config:
-      discovery:
-        enabled: true
-        serviceId: spring-cloud-lab-config
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:5002/eureka/
+    config: 
+      uri: http://localhost:5001
+      fail-fast: true # 强依赖配置中心，配置中心未启动时，则本应用无法启动
+      username: _config
+      password: _linux

@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EchoServerApplication {
+public class EchoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EchoServerApplication.class, args);
+        SpringApplication.run(EchoApplication.class, args);
     }
 }

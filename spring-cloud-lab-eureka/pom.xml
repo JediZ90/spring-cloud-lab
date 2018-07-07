@@ -38,6 +38,11 @@
             <artifactId>activation</artifactId>
             <version>1.1.1</version>
         </dependency>
+        <!--配置中心客户端 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
         <!-- 安全依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

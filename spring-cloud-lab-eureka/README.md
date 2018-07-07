@@ -1,5 +1,5 @@
 # spring-cloud-lab-eureka
 
-参考文档：https://spring.io/guides/gs/service-registration-and-discovery/
+http://localhost:6001/  _eureka/_linux
 
-http://localhost:5001/
+org.springframework.cloud.netflix.eureka.EurekaInstanceConfigBean

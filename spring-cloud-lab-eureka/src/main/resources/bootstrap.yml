@@ -1,5 +1,18 @@
 spring:
   application:
     name: spring-cloud-lab-eureka
-  profiles:
-    active: lab
+  cloud:
+    config: 
+      uri: http://localhost:5001
+      fail-fast: true # 强依赖配置中心，配置中心未启动时，则本应用无法启动
+      username: _config
+      password: _linux
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false # 是否向 Eureka 注册服务。本模块为服务注册中心，不需要自注册，设置为 false
+    fetchRegistry: false # 是否检索服务。该应用为服务注册中心，职责为注册和发现服务，无需检索服务，设置为 false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0 # 设置同步为空时的等待时间。默认 5 * MINUTES
