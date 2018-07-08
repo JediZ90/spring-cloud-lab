@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-cloud-lab-oauth2
+  cloud:
+    config: 
+      uri: http://localhost:5001
+      fail-fast: true # 强依赖配置中心，配置中心未启动时，则本应用无法启动
+      username: _config
+      password: _linux

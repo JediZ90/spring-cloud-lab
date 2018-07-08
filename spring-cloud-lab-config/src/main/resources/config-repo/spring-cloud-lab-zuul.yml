@@ -1,0 +1,13 @@
+server:
+  port: 7001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://_eureka:_linux@localhost:6001/eureka/
+
+zuul:
+  routes:
+    echo-service:    #自定义的 路由名称
+      path: /api-echo/**   #路由路径
+      serviceId: spring-cloud-lab-echo #VIP 模式中的 serviceId

@@ -10,7 +10,6 @@ spring:
       ddl-auto: update
     show-sql: true
 
----
 spring:
   profiles:
     active: cloud

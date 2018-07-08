@@ -26,10 +26,12 @@
 	</properties>
 
 	<modules>
-		<module>spring-cloud-lab-eureka</module>
 		<module>spring-cloud-lab-config</module>
-        <module>spring-cloud-lab-bookstore</module>
+		<module>spring-cloud-lab-eureka</module>
         <module>spring-cloud-lab-echo</module>
+        <module>spring-cloud-lab-zuul</module>
+        <module>spring-cloud-lab-oauth2</module>
+        <module>spring-cloud-lab-bookstore</module>
         <module>spring-cloud-lab-reading</module>
 	</modules>
 
