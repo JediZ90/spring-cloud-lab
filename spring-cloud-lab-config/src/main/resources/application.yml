@@ -11,5 +11,21 @@ spring:
           search-locations: classpath:/config-repo
   security:
     user:
-      name: _config
-      password: _linux
+      name: 1
+      password: 1
+  datasource:
+    name: MySqlDS
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.102:3306/diccer?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: sloth@linux
+    preferred-test-query: select 1 from dual
+  cmf:
+    paas:
+      task:
+        enabled: true
+        prefix: '####'
+        suffix: '@@@@'
+mybatis:
+  mapper-locations: classpath*:com/cmf/**/mapper/*.xml
+  config-location: classpath:MybatisConfiguration.xml

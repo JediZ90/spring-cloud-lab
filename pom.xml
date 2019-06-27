@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.8.RELEASE</version>
+		<version>2.0.9.RELEASE</version>
 	</parent>
 
 	<groupId>lab.cloud</groupId>
@@ -21,8 +21,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>11</java.version>
-		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
+		<java.version>8</java.version>
+		<spring-cloud.version>Finchley.SR3</spring-cloud.version>
 	</properties>
 
 	<modules>
@@ -33,6 +33,7 @@
         <module>spring-cloud-lab-oauth2</module>
         <module>spring-cloud-lab-bookstore</module>
         <module>spring-cloud-lab-reading</module>
+        <module>bookinfo-reviews</module>
 	</modules>
 
 	<dependencyManagement>
