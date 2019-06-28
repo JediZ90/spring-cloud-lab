@@ -5,18 +5,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.ws.rs.core.Application;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import application.config.ReviewsConfig;
 import application.feign.RatingsFeignClient;
 
 @RestController
-public class LibertyRestEndpoint extends Application {
+public class LibertyRestEndpoint {
 
 	private final static Boolean ratings_enabled = Boolean.valueOf(System.getenv("ENABLE_RATINGS"));
 	private final static String star_color = System.getenv("STAR_COLOR") == null ? "black"
@@ -24,6 +23,8 @@ public class LibertyRestEndpoint extends Application {
 
 	@Autowired
 	private RatingsFeignClient ratingsFeignClient;
+	@Autowired
+	private ReviewsConfig reviewsConfig;
 
 	private Map<String, Object> getResponse(String productId, int starsReviewer1, int starsReviewer2) {
 
