@@ -1,10 +1,11 @@
 server:
-  port: 8001
+  port: 9080
 
 apollo:
-  cacheDir: /Users/zhangbaohao/temp/apollo/reviews
+  cacheDir: /tmp/reviews/apollo
   bootstrap:
     enabled: true
+    namespaces: application,public.egret
 
 ### xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
 xxl:
@@ -13,8 +14,8 @@ xxl:
       addresses: http://127.0.0.1:8080/xxl-job-admin
     executor:
       appname: reviews
-      ip: 127.0.0.1
-      port: 8888
-      logpath: /Users/zhangbaohao/temp/applogs/xxl-job/jobhandler
+      ip: 
+      port: 9999
+      logpath: /tmp/reviews/xxl-job
       logretentiondays: -1
     accessToken: 

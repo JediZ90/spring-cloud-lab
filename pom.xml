@@ -28,12 +28,16 @@
 	<modules>
 		<module>spring-cloud-lab-config</module>
 		<module>spring-cloud-lab-eureka</module>
-        <module>spring-cloud-lab-echo</module>
-        <module>spring-cloud-lab-zuul</module>
-        <module>spring-cloud-lab-oauth2</module>
-        <module>spring-cloud-lab-bookstore</module>
-        <module>spring-cloud-lab-reading</module>
-        <module>bookinfo-reviews</module>
+		<module>spring-cloud-lab-echo</module>
+		<module>spring-cloud-lab-zuul</module>
+		<module>spring-cloud-lab-oauth2</module>
+		<module>spring-cloud-lab-bookstore</module>
+		<module>spring-cloud-lab-reading</module>
+		<module>bookinfo-reviews</module>
+		<module>seata-business-service</module>
+		<module>seata-order-service</module>
+		<module>seata-storage-service</module>
+		<module>seata-user-service</module>
 	</modules>
 
 	<dependencyManagement>

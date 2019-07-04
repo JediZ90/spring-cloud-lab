@@ -9,10 +9,10 @@
 		<version>1.0</version>
 	</parent>
 
-	<artifactId>bookinfo-reviews</artifactId>
+	<artifactId>seata-order-service</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
-	<description>The bookinfo-reviews module of spring-cloud-lab</description>
+	<description>The seata-order-service module of spring-cloud-lab</description>
 
 	<dependencies>
 		<dependency>
@@ -31,9 +31,29 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.xuxueli</groupId>
-			<artifactId>xxl-job-core</artifactId>
-			<version>2.0.2</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-alibaba-seata</artifactId>
+			<version>0.9.1.BUILD-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>io.seata</groupId>
+					<artifactId>seata-spring</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>io.seata</groupId>
+			<artifactId>seata-all</artifactId>
+			<version>0.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -44,6 +64,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>bookinfo-reviews</finalName>
+		<finalName>seata-order-service</finalName>
 	</build>
 </project>
